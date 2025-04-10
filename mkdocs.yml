@@ -1,13 +1,25 @@
 site_name: KNHcloud
 site_url: http://knhcloud
 theme:
+  language: ru
   name: material
   logo: assets/luk-logo.jpg
   favicon: assets/luk-logo.jpg
   features:
     - navigation.footer
   palette:
-    primary: red
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      toggle:
+        icon: material/weather-night
+        name: Переключить в темный режим
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      toggle:
+        icon: material/weather-sunny
+        name: Переключить в светлый режим
 
 markdown_extensions:
   - attr_list

@@ -1,19 +1,13 @@
-# Welcome to MkDocs
+# Телефонные номера
+<!-- # Портал ООО "К.Н. Холдинг" -->
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+=== "Покровка"
+    {{ read_excel('assets/mkdocs_telnum_pokrovka.xlsx', engine='openpyxl') }}
 
-## Commands
+=== "Сретенка"
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+    {{ read_excel('assets/mkdocs_telnum_sretenka.xlsx', engine='openpyxl') }}
 
-## Project layout
+=== "ЛУН-Инвест"
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-I like play :soccer: after a :beer:
+    {{ read_excel('assets/mkdocs_telnum_luni.xlsx', engine='openpyxl') }}

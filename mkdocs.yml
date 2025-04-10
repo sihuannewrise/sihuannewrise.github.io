@@ -1,30 +1,13 @@
-site_name: My Docs Material Documentation
-site_url: https://sihuannewrise.github.io
+site_name: KNHcloud
+site_url: http://knhcloud
 theme:
   name: material
-  font:
-    text: Merriweather Sans
-    code: Red Hat Mono
   logo: assets/luk-logo.jpg
   favicon: assets/luk-logo.jpg
   features:
     - navigation.footer
   palette:
-    # Dark Mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Переключить в светлый режим
-      primary: green
-      accent: deep purple
-
-    # Light Mode
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Переключить в темный режим
-      primary: red
-      accent: deep orange
+    primary: red
 
 markdown_extensions:
   - attr_list
@@ -46,5 +29,17 @@ markdown_extensions:
       alternate_style: true
   - admonition
   - pymdownx.details
+  - tables
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+plugins:
+  - search
+  - table-reader
 
 copyright: Copyright &copy; 2025 KNHCloud
